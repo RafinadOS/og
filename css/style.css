@@ -114,6 +114,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Lato-font';
+  src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype'), url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato-font';
+  src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Light.woff') format('woff'), url('../fonts/Lato-Light.ttf') format('truetype'), url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima-font';
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.otf') format('opentype'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.otf') format('opentype'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 *:after,
 *:before {
@@ -125,4 +149,69 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Lato-font';
+  background: #fff url('../img/bg.jpg') top center no-repeat;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  font-weight: normal;
+}
+.wrapper {
+  clear: both;
+  display: block;
+  width: 900px;
+  margin: auto;
+  position: relative;
+}
+.line-1 {
+  width: 5000px;
+  height: 535px;
+  background: #1e1e1e;
+  position: absolute;
+  top: 875px;
+  left: 50%;
+  margin-left: -2500px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.topmenu {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 40px 0;
+}
+.topmenu__item {
+  display: inline-block;
+}
+.topmenu__item a {
+  display: block;
+  color: #6f5d6f;
+  text-decoration: none;
+  padding: 10px 42px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.header {
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.header__logo {
+  display: block;
+  width: 137px;
+  height: 124px;
+  margin: auto;
+}
+.header__title {
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+  letter-spacing: 2px;
+  line-height: 36px;
 }

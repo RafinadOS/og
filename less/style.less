@@ -8,7 +8,82 @@
     box-sizing: border-box;
 }
 
+@font-1: 			'Lato-font';
+@font-2: 			'MyriadPro-Regular';
+
+.transform (@trns: rotate(-45deg)){
+	-webkit-transform: @trns;
+	-moz-transform: @trns;
+	transform: @trns;
+}
+
 html,body {
 	padding: 0;
 	margin: 0;
+	font-family: @font-1;
+	background: #fff url('../img/bg.jpg') top center no-repeat;
+	font-size: 14px;
+	overflow: hidden;
+	position: relative;
+	min-height: 100vh;
+	font-weight: normal;
 }
+.wrapper {
+	clear: both;
+	display: block;
+	width: 900px;
+	margin: auto;
+	position: relative;
+}
+.line-1 {
+	width: 5000px;
+	height: 535px;
+	background: #1e1e1e;
+	position: absolute;
+	top: 875px;
+	left: 50%;
+	margin-left: -2500px;
+	.transform();
+}
+
+.topmenu {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	list-style: none;
+	text-align: center;
+	padding: 40px 0;
+	&__item {
+		display: inline-block;
+		& a {
+			display: block;
+			color: #6f5d6f;
+			text-decoration: none;
+			padding: 10px 42px;
+			font-size: 16px;
+			letter-spacing: 3px;
+			font-weight: bold;
+		}
+
+	}
+}
+.header {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	&__logo {
+		display: block;
+		width: 137px;
+		height: 124px;
+		margin: auto;
+	}
+	&__title {
+		text-align: center;
+		color: #fff;
+		font-size: 34px;
+		letter-spacing: 2px;
+		line-height: 36px;
+	}
+}
+

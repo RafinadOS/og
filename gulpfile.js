@@ -40,7 +40,7 @@ gulp.task('less', function () {
 
 // move images for styles
 gulp.task('img', function() {
-   return gulp.src(['img/*.',])
+   return gulp.src(['img/*.jpg',])
    .pipe(gulp.dest('app/img/'))
    .pipe(connect.reload())
 });
@@ -68,7 +68,7 @@ gulp.task('js', function() {
 
 // move fonts
 gulp.task('fonts', function() {
-   return gulp.src([	'fonts/*.'])
+   return gulp.src([	'fonts/*.woff','fonts/*.svg','fonts/*.ttf','fonts/*.eot'])
    .pipe(gulp.dest('app/fonts/'))
 });
 
@@ -78,6 +78,7 @@ gulp.task('watch', function() {
    gulp.watch('*.html', ['html'])
    gulp.watch('less/*.less', ['less'])
    gulp.watch('js/*.js', ['js'])
+   gulp.watch('img/*.', ['img'])
 });
 
 // default tusk "gulp"
